@@ -2,11 +2,6 @@
 
 A comprehensive guide to building RAG-based LLM applications for production.
 
-- **Blog post**: https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1
-- **GitHub repository**: https://github.com/ray-project/llm-applications
-- **Interactive notebook**: https://github.com/ray-project/llm-applications/blob/main/notebooks/rag.ipynb
-- **Anyscale Endpoints**: https://endpoints.anyscale.com/
-- **Ray documentation**: https://docs.ray.io/
 
 In this guide, we will learn how to:
 
@@ -43,16 +38,8 @@ We'll be using [OpenAI](https://platform.openai.com/docs/models/) to access Chat
 
 ### Repository
 ```bash
-git clone https://github.com/ray-project/llm-applications.git .
 git config --global user.name <GITHUB-USERNAME>
 git config --global user.email <EMAIL-ADDRESS>
-```
-
-### Data
-Our data is already ready at `/efs/shared_storage/goku/docs.ray.io/en/master/` (on Staging, `us-east-1`) but if you wanted to load it yourself, run this bash command (change `/desired/output/directory`, but make sure it's on the shared storage,
-so that it's accessible to the workers)
-```bash
-git clone https://github.com/ray-project/llm-applications.git .
 ```
 
 ### Environment
@@ -79,9 +66,4 @@ DB_CONNECTION_STRING="dbname=postgres user=postgres host=localhost password=post
 source .env
 ```
 
-Now we're ready to go through the [rag.ipynb](notebooks/rag.ipynb) interactive notebook to develop and serve our LLM application!
 
-### Learn more
-- If your team is investing heavily in developing LLM applications, [reach out](mailto:endpoints-help@anyscale.com) to us to learn more about how [Ray](https://github.com/ray-project/ray) and [Anyscale](http://anyscale.com/) can help you scale and productionize everything.
-- Start serving (+fine-tuning) OSS LLMs with [Anyscale Endpoints](https://endpoints.anyscale.com/) ($1/M tokens for `Llama-2-70b`) and private endpoints available upon request (1M free tokens trial).
-- Learn more about how companies like OpenAI, Netflix, Pinterest, Verizon, Instacart and others leverage Ray and Anyscale for their AI workloads at the [Ray Summit 2023](https://raysummit.anyscale.com/) this Sept 18-20 in San Francisco.
